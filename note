@@ -1,3 +1,16 @@
 安装svn
 http://blog.csdn.net/bluestarf/article/details/19653839
 
+安装redis
+http://www.cnblogs.com/silent2012/p/3499654.html
+
+安装mysql5.6
+http://blog.csdn.net/jom_ch/article/details/21173121
+http://www.cnblogs.com/Anker/p/3551610.html
+
+同步服务器时间
+ntpdate  0.cn.pool.ntp.org
+
+hadoop
+http://hadoop.apache.org/docs/r1.0.4/cn/hdfs_user_guide.html
+
