@@ -23,3 +23,23 @@ tomcat远程
 catalina.sh 首行加入
 CATALINA_OPTS="-server -Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5888"
 
+rpm -q openssh-clients
+
+yum -y install openssh-clients
+
+scp -r tomcat-web-new.tar.gz root@139.162.42.26:/home
+
+tar zxvf /bbs.tar.zip -C /zzz/bbs 
+
+netstat -lnpt  你可以用这个命令检测，端口是否打开
+
+select count(1) from a_pay_order where ordertype=6 and status =3 and deposittime>='2016-06-27 00:00:00';
+
+service iptables stop关掉防火墙
+
+ntpdate  0.cn.pool.ntp.org
+
+window8启动项
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp
+
+scp -P33033 zp.tar root@111.222.123.01:/da1/web/zhaopin.shouhuobao.com
