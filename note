@@ -52,3 +52,7 @@ window8启动项
 C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp
 
 scp -P33033 zp.tar root@111.222.123.01:/da1/web/zhaopin.shouhuobao.com
+
+mysql 5.6.31
+http://dev.mysql.com/get/Downloads/MySQL-5.6/mysql-5.6.31-linux-glibc2.5-x86_64.tar.gz
+https://www.cnblogs.com/wangdaijun/p/6132632.html
