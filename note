@@ -16,6 +16,11 @@ https://drive.google.com/file/d/0B5ocRtapZZ1NbUQwMTBqajNETlk/view?usp=sharing
 同步服务器时间
 ntpdate  0.cn.pool.ntp.org
 
+同步时区：
+ntpdate us.pool.ntp.org && hwclock -w
+timedatectl set-timezone Asia/Shanghai #设置系统时区为上海 && timedatectl set-local-rtc 1 #设置硬件时间，liunx有分系统时间和硬件时间   && timedatectl set-ntp yes #启用时间同步
+
+
 hadoop
 http://hadoop.apache.org/docs/r1.0.4/cn/hdfs_user_guide.html
 
