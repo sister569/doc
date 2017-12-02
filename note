@@ -15,6 +15,10 @@ https://drive.google.com/file/d/0B5ocRtapZZ1NbUQwMTBqajNETlk/view?usp=sharing
 
 同步服务器时间
 ntpdate  0.cn.pool.ntp.org
+ZONE="Asia/Shanghai"
+cat /etc/sysconfig/clock
+
+cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
 同步时区：
 ntpdate us.pool.ntp.org && hwclock -w
