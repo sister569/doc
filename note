@@ -22,6 +22,13 @@ Grant select,insert,update,delete,lock tables on E05db.* to hycbet@127.0.0.1 ide
  
  find / -name mysqld_safe
  /usr/bin/mysqld_safe --skip-grant-tables
+ 
+ flush privileges;
+
+SELECT DISTINCT CONCAT('User: ''',user,'''@''',host,''';') AS query FROM mysql.user;
+
+CREATE DATABASE `hycdb` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+
 
 
 tomcat7
