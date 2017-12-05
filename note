@@ -19,6 +19,9 @@ Grant select,insert,update,delete,lock tables on E05db.* to hycbet@127.0.0.1 ide
 
  ln -s /usr/local/mysql/bin/mysql /usr/bin
  ln -s /var/lib/mysql/mysql.sock /tmp/mysql.sock
+ 
+ find / -name mysqld_safe
+ /usr/bin/mysqld_safe --skip-grant-tables
 
 
 tomcat7
