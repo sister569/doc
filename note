@@ -12,10 +12,13 @@ http://www.cnblogs.com/Anker/p/3551610.html
 mysql 5.6.31
 http://dev.mysql.com/get/Downloads/MySQL-5.6/mysql-5.6.31-linux-glibc2.5-x86_64.tar.gz
 https://www.cnblogs.com/wangdaijun/p/6132632.html
-ln -s /var/lib/mysql/mysql.sock /tmp/mysql.sock
+
 CREATE USER 'suppere05'@'%' IDENTIFIED BY '?e0516898!!!'; 
 GRANT ALL ON ecrmdb.* TO 'suppere05'@'%' IDENTIFIED BY '?e0516898!!!'; 
 Grant select,insert,update,delete,lock tables on E05db.* to hycbet@127.0.0.1 identified by  '?dxy16898!!!';
+
+ ln -s /usr/local/mysql/bin/mysql /usr/bin
+ ln -s /var/lib/mysql/mysql.sock /tmp/mysql.sock
 
 
 tomcat7
