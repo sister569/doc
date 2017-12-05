@@ -9,6 +9,15 @@ http://www.cnblogs.com/silent2012/p/3499654.html
 http://blog.csdn.net/jom_ch/article/details/21173121
 http://www.cnblogs.com/Anker/p/3551610.html
 
+mysql 5.6.31
+http://dev.mysql.com/get/Downloads/MySQL-5.6/mysql-5.6.31-linux-glibc2.5-x86_64.tar.gz
+https://www.cnblogs.com/wangdaijun/p/6132632.html
+ln -s /var/lib/mysql/mysql.sock /tmp/mysql.sock
+CREATE USER 'suppere05'@'%' IDENTIFIED BY '?e0516898!!!'; 
+GRANT ALL ON ecrmdb.* TO 'suppere05'@'%' IDENTIFIED BY '?e0516898!!!'; 
+Grant select,insert,update,delete,lock tables on E05db.* to hycbet@127.0.0.1 identified by  '?dxy16898!!!';
+
+
 tomcat7
 https://drive.google.com/file/d/0B5ocRtapZZ1NbUQwMTBqajNETlk/view?usp=sharing
 
@@ -57,15 +66,8 @@ ntpdate  0.cn.pool.ntp.org
 window8启动项
 C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp
 
+scp -r tomcat-web-new.tar.gz root@139.162.42.26:/home
+
 scp -P33033 zp.tar root@111.222.123.01:/da1/web/zhaopin.shouhuobao.com
 
-mysql 5.6.31
-http://dev.mysql.com/get/Downloads/MySQL-5.6/mysql-5.6.31-linux-glibc2.5-x86_64.tar.gz
-https://www.cnblogs.com/wangdaijun/p/6132632.html
 
-ln -s /var/lib/mysql/mysql.sock /tmp/mysql.sock
-CREATE USER 'suppere05'@'%' IDENTIFIED BY '?e0516898!!!'; 
-
-GRANT ALL ON ecrmdb.* TO 'suppere05'@'%' IDENTIFIED BY '?e0516898!!!'; 
-
-Grant select,insert,update,delete,lock tables on E05db.* to hycbet@127.0.0.1 identified by  '?dxy16898!!!';
