@@ -30,6 +30,14 @@ SELECT DISTINCT CONCAT('User: ''',user,'''@''',host,''';') AS query FROM mysql.u
 
 CREATE DATABASE `hycdb` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 
+SELECT CONCAT(table_schema,'.',table_name) AS 'Table Name', 
+    table_rows AS 'Number of Rows', 
+    CONCAT(ROUND(data_length/(1024*1024*1024),6),' G') AS 'Data Size', 
+    CONCAT(ROUND(index_length/(1024*1024*1024),6),' G') AS 'Index Size' , 
+    CONCAT(ROUND((data_length+index_length)/(1024*1024*1024),6),' G') AS'Total'
+FROM information_schema.TABLES 
+WHERE table_schema LIKE 'ecrmdb'; 
+
 
 
 tomcat7
