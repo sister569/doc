@@ -23,6 +23,8 @@ Grant select,insert,update,delete,lock tables on E05db.* to hycbet@127.0.0.1 ide
  find / -name mysqld_safe
  /usr/bin/mysqld_safe --skip-grant-tables
  
+ show variables like 'max_connections'
+ 
  update user set password=passworD("test") where user='root';
  flush privileges;
 
