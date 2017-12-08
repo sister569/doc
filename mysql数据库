@@ -25,3 +25,11 @@ insert into a_game_betlog_20161004 select * from a_game_betlog a where a.betdate
 
 select DATE_FORMAT(NOW(),'%Y-%m-%d %H:%i:%s');
 
+查看表空间
+SELECT CONCAT(table_schema,'.',table_name) AS 'Table Name', 
+    table_rows AS 'Number of Rows', 
+    CONCAT(ROUND(data_length/(1024*1024*1024),6),' G') AS 'Data Size', 
+    CONCAT(ROUND(index_length/(1024*1024*1024),6),' G') AS 'Index Size' , 
+    CONCAT(ROUND((data_length+index_length)/(1024*1024*1024),6),' G') AS'Total'
+FROM information_schema.TABLES 
+WHERE table_schema LIKE 'ecrmdb'; 
