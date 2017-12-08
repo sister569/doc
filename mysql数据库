@@ -1,1 +1,27 @@
+查找用户
+SELECT DISTINCT CONCAT('User: ''',user,'''@''',host,''';') AS query FROM mysql.user;
+
+删除用户
+drop user 'test'@localhost
+
+授权
+Grant select,insert,update,delete,lock tables on yhcdb.* to hycbet@127.0.0.1 identified by  '?dxy16898!!!';
+GRANT ALL ON hycdb.* TO 'hycbet'@'122.3.235.166' IDENTIFIED BY "?dxy16898!!!";
+
+刷新权限
+flush privileges;
+
+创建数据库
+CREATE DATABASE `hycdb` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+mysql5.7
+SET sql_mode ='STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION';
+
+数据迁移
+create table  a_game_betlog_20160923 select * from a_game_betlog where betdate<'2016-05-15 00:00:00'; 将过期数据移动到新表中
+delete from a_game_betlog where betdate<'2016-06-25 00:00:00';
+insert into a_game_betlog_20160819 select * from a_game_betlog a where a.betdate<'2016-05-15 00:00:00';
+insert into a_game_betlog_20161004 select * from a_game_betlog a where a.betdate<'2016-07-15 00:00:00';
+
+select DATE_FORMAT(NOW(),'%Y-%m-%d %H:%i:%s');
 
