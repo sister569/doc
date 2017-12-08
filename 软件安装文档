@@ -1,1 +1,25 @@
 
+安装svn
+http://blog.csdn.net/bluestarf/article/details/19653839
+
+安装redis
+yum install gcc
+http://www.cnblogs.com/silent2012/p/3499654.html
+
+安装mysql5.6
+http://blog.csdn.net/jom_ch/article/details/21173121
+http://www.cnblogs.com/Anker/p/3551610.html
+
+mysql 5.6.31
+http://dev.mysql.com/get/Downloads/MySQL-5.6/mysql-5.6.31-linux-glibc2.5-x86_64.tar.gz
+https://www.cnblogs.com/wangdaijun/p/6132632.html
+
+tomcat7
+https://drive.google.com/file/d/0B5ocRtapZZ1NbUQwMTBqajNETlk/view?usp=sharing
+
+nginx
+https://www.cnblogs.com/comexchan/p/5495743.html
+https://www.cnblogs.com/luxh/p/4680316.html
+
+hadoop
+http://hadoop.apache.org/docs/r1.0.4/cn/hdfs_user_guide.html
