@@ -1,6 +1,9 @@
 查找用户
 SELECT DISTINCT CONCAT('User: ''',user,'''@''',host,''';') AS query FROM mysql.user;
 
+设置用户密码
+update user set password=passworD("test") where user='root';
+
 删除用户
 drop user 'test'@localhost
 
