@@ -1,0 +1,10 @@
+远程传输
+scp -r tomcat-web-new.tar.gz root@139.162.42.26:/home
+scp -P33033 zp.tar root@111.222.123.01:/da1/web/zhaopin.shouhuobao.com
+
+
+同步服务器时间
+ntpdate  0.cn.pool.ntp.org
+ZONE="Asia/Shanghai"
+cat /etc/sysconfig/clock
+cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
