@@ -21,6 +21,8 @@ root ?yl@16898!!!
 xiaogao\?e0516898!!!
 root ?e8816898!!!
 
+mysqldump -uroot -p -hlocalhost -P3306 -n -d -t -R E88db > procedurename.sql
+
 tomcat 开启远程调试
 CATALINA_OPTS="-server -Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5888"
 
