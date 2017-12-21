@@ -4,6 +4,11 @@ http://blog.csdn.net/bluestarf/article/details/19653839
 maven
 https://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/#getting-started
 
+windows mysql5.6.38
+mysqld.exe --remove MySQL
+mysqld --initialize-insecure --user=mysql
+mysqld --install
+
 139.162.106.129
 xiaogao  yl123qwe!@#%
 root ?yl@16898!!!
