@@ -9,6 +9,10 @@ mysqld.exe --remove MySQL
 mysqld --initialize-insecure --user=mysql
 mysqld --install
 
+
+update user set password=password("root") where user="root";
+update mysql.user set authentication_string=password('root') where user='root' ;
+
 139.162.106.129
 xiaogao  yl123qwe!@#%
 root ?yl@16898!!!
