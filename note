@@ -9,7 +9,6 @@ mysqld.exe --remove MySQL
 mysqld --initialize-insecure --user=mysql
 mysqld --install
 
-
 update user set password=password("root") where user="root";
 update mysql.user set authentication_string=password('root') where user='root' ;
 
@@ -20,6 +19,11 @@ root ?yl@16898!!!
 139.162.85.66
 xiaogao\?e0516898!!!
 root ?e8816898!!!
+
+47.91.218.238(公)
+172.31.105.8(私有)
+root
+yl!@#$1234
 
 mysqldump -uroot -p -hlocalhost -P3306 -n -d -t -R E88db > procedurename.sql
 
