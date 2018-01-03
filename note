@@ -16,8 +16,12 @@ update mysql.user set authentication_string=password('root') where user='root' ;
 xiaogao  yl123qwe!@#%
 root ?yl@16898!!!
 
+47.91.218.238
+xiaogao yl123qwe!@#%
+root ?yl@16898!!!
+
 139.162.85.66
-xiaogao\?e0516898!!!
+xiaogao?e0516898!!!
 root ?e8816898!!!
 
 47.91.218.238(公)
