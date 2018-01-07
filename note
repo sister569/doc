@@ -72,6 +72,10 @@ Grant select,insert,update,delete,lock tables on E05db.* to hycbet@127.0.0.1 ide
  update user set password=passworD("test") where user='root';
  set password for root@localhost = password('654321');
  flush privileges;
+ 
+ ## 存储过程授权
+ GRANT SELECT ON mysql.proc TO 'root'@'localhost';
+ GRANT SELECT ON mysql.proc TO 'root'@192.168.191.80 identified by '?e8816898!!!';
 
 SELECT DISTINCT CONCAT('User: ''',user,'''@''',host,''';') AS query FROM mysql.user;
 
