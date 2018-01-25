@@ -1,0 +1,21 @@
+select * from api_tb_proxy where PROXY_CODE='EN003A';
+
+select * from api_tb_proxy_key where GAME_ID=27;
+
+select * from data_handle where handlecode='begin.time.eibc';
+
+select * from data_handle_maintenance where gametype='eIBCGame';
+
+select * from api_eibc_gameinfo;
+
+select * from enterprise where enterprisecode in
+(
+select DISTINCT PROXY_CODE from api_tb_proxy 
+);
+
+select * from enterprise_employee where enterprisecode in(
+select DISTINCT PROXY_CODE from api_tb_proxy 
+);
+
+
+select * from api_tb_proxy_key a left join api_tb_game b on a.GAME_ID=b.GAME_ID left join api_tb_proxy c on a.PROXY_ID=c.PROXY_ID;
