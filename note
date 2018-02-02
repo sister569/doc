@@ -4,6 +4,9 @@ http://blog.csdn.net/bluestarf/article/details/19653839
 maven
 https://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/#getting-started
 
+git 提交代码
+https://www.cnblogs.com/eedc/p/6168430.html
+
 windows mysql5.6.38
 mysqld.exe --remove MySQL
 mysqld --initialize-insecure --user=mysql
