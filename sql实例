@@ -12,3 +12,57 @@ select cardnumber  into outfile ='./card.xls' from a_card_package group by cardn
 select b.uaccount,b.deposittime,sum(b.amount) from (select a.uaccount,a.amount,DATE_FORMAT(a.deposittime,'%Y-%m-%d') as 'deposittime' from a_pay_order a
 where a.paytyple =0 and a.`status` =3 and a.uiid=511 and a.hdnumber <> 3 and a.hdnumber <> 4
 and a.deposittime>='2016-02-08 00:00:00' and a.deposittime<='2016-02-14 23:59:59') b GROUP BY b.uaccount,b.deposittime;
+
+
+http://www.gad.qq.com/article/detail/31474?sessionUserType=BFT.PARAMS.232734.TASKID&ADUIN=83048439&ADSESSION=1502941864&ADTAG=CLIENT.QQ.5533_.0&ADPUBNO=26719
+
+
+delete from a_pay_order where status <>3 and paytyple =0 and deposittime <='2017-07-01 00:00:00';
+
+
+http://pan.baidu.com/s/1kUU8ArX
+
+window8启动项
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp
+
+同步时区：
+ntpdate us.pool.ntp.org && hwclock -w
+timedatectl set-timezone Asia/Shanghai #设置系统时区为上海 && timedatectl set-local-rtc 1 #设置硬件时间，liunx有分系统时间和硬件时间   && timedatectl set-ntp yes #启用时间同步
+
+xiaogao19891  lxwLXW1234
+
+jimzhang879@gmail.com  qwer+4321
+
+kaka82920@gmail.com
+
+菲律宾
+奥迪
+河夹
+
+3355489516
+
+建立一个表
+create table  a_game_betlog_20160923 select * from a_game_betlog where betdate<'2016-05-15 00:00:00'; 将过期数据移动到新表中
+delete from a_game_betlog where betdate<'2016-06-25 00:00:00';
+insert into a_game_betlog_20160819 select * from a_game_betlog a where a.betdate<'2016-05-15 00:00:00';
+
+insert into a_game_betlog_20161004 select * from a_game_betlog a where a.betdate<'2016-07-15 00:00:00';
+
+find  /usr/local/atstar/voicestar/recordings/ -name *.mp3 -exec shred -f -u {} \;
+
+rpm -q openssh-clients
+
+yum -y install openssh-clients
+
+scp -r tomcat-web-new.tar.gz root@139.162.42.26:/home
+
+scp -P33033 zp.tar root@111.222.123.01:/da1/web/zhaopin.shouhuobao.com
+
+tar zxvf /bbs.tar.zip -C /zzz/bbs 
+
+netstat -lnpt  你可以用这个命令检测，端口是否打开
+
+select count(1) from a_pay_order where ordertype=6 and status =3 and deposittime>='2016-06-27 00:00:00';
+
+service iptables stop关掉防火墙
+
