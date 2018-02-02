@@ -1,0 +1,14 @@
+select cardnumber  into outfile ='./card.xls' from a_card_package group by cardnumber having count(1) > 1;
+
+        SELECT
+            SUM(bet.profitamount)
+        FROM
+            a_game_betlog bet
+        WHERE
+            bet.account = 'j21253'
+        AND bet.betdate >='2016-03-01 00:00:00'
+        AND bet.betdate <='2016-03-31 00:00:00';
+
+select b.uaccount,b.deposittime,sum(b.amount) from (select a.uaccount,a.amount,DATE_FORMAT(a.deposittime,'%Y-%m-%d') as 'deposittime' from a_pay_order a
+where a.paytyple =0 and a.`status` =3 and a.uiid=511 and a.hdnumber <> 3 and a.hdnumber <> 4
+and a.deposittime>='2016-02-08 00:00:00' and a.deposittime<='2016-02-14 23:59:59') b GROUP BY b.uaccount,b.deposittime;
