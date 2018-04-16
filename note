@@ -17,6 +17,10 @@ mysqld.exe --remove MySQL
 mysqld --initialize-insecure --user=mysql
 mysqld --install
 
+重启
+net mysql start
+mysqladmin -u root -p flush-hosts
+
 update user set password=password("root") where user="root";
 update mysql.user set authentication_string=password('root') where user='root' ;
 
