@@ -1,0 +1,33 @@
+系统启动
+@EnableJpaAuditing
+public class AppContext{
+
+}
+
+父类
+/**
+ * 映射超类
+ * 说明：mysql中 explicit_defaults_for_timestamp 为OFF 时，会自动补齐当前时间值给timestamp类型字段；因此，可以不需要给saveTime提供值；
+ */
+@EntityListeners(AuditingEntityListener.class)
+public class BaseEntity {
+ /**
+     * 数据第一次写入数据表的日期
+     * 说明：此处使用了spring-jpa的CreatedDate：在这个实体被insert的时候，会设置值；
+     *      （使用方法：在application启动类中加上注解EnableJpaAuditing）
+     */
+    @Column(columnDefinition = "datetime",updatable = false)
+    @CreatedDate
+    private Date saveTime;
+
+    /**
+     * 数据更新的日期
+     * mysql说明：
+     *      表中的第一个TIMESTAMP列，如果没有指定null属性或者没有指定默认值，也没有指定ON UPDATE语句。
+     *      那么该列会自动被加上DEFAULT CURRENT_TIMESTAMP和ON UPDATE CURRENT_TIMESTAMP属性。
+     *      一个表可以存在多个TIMESTAMP列，但只有一个列会根据数据更新而改变为数据库系统当前值。因此，一个表中有多个TIMESTAMP列是没有意义！
+     */
+    @Column(columnDefinition = "timestamp")
+    private Timestamp updateTime;
+
+}
