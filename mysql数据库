@@ -46,3 +46,11 @@ group by TABLE_NAME
 order by data_length desc;
 
 
+查看字符集
+show table STATUS from kpzj_0622;
+
+级联修改
+update finance_expense_apply a INNER JOIN sys_ucenter_account b on a.registerMan=b.name 
+INNER JOIN unit_person_account c on b.id = c.accountId set a.registerManID=c.personID;
+
+
