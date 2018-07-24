@@ -22,24 +22,9 @@ net mysql start
 mysqladmin -u root -p flush-hosts
 
 update user set password=password("root") where user="root";
+
+mysql5.7修改root密码
 update mysql.user set authentication_string=password('root') where user='root' ;
-
-139.162.106.129
-xiaogao  yl123qwe!@#%
-root ?yl@16898!!!
-
-47.91.218.238
-xiaogao yl123qwe!@#%
-root ?yl@16898!!!
-
-139.162.85.66
-xiaogao?e0516898!!!
-root ?e8816898!!!
-
-47.91.218.238(公)
-172.31.105.8(私有)
-root
-yl!@#$1234
 
 mysqldump -uroot -p -hlocalhost -P3306 -n -d -t -R E88db > procedurename.sql
 
