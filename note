@@ -3,6 +3,11 @@ sister569  qwer+4321
 jd：xfscce1990223 lxwLXW1234
 sn：mobile  123qwe
 
+windows redis集群
+redis-server --service-install redis.windows-service6380.conf --service-name redis6380
+redis-server --service-install redis.windows-service.conf --service-name redis6379
+redis-server --service-start redis.windows-service.conf --service-name redis6379
+redis-server --service-start redis.windows-service6380.conf --service-name redis6380
 
 https://gitee.com/sipengcode/quick-pay/
 https://github.com/Exrick/xpay
