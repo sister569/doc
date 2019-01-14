@@ -6,3 +6,8 @@ redis-server --service-install redis.windows-service6380.conf --service-name red
 redis-server --service-install redis.windows-service.conf --service-name redis6379
 redis-server --service-start redis.windows-service.conf --service-name redis6379
 redis-server --service-start redis.windows-service6380.conf --service-name redis6380
+
+windows mysql5.6.38
+mysqld.exe --remove MySQL
+mysqld --initialize-insecure --user=mysql
+mysqld --install
