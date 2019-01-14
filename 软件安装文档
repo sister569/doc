@@ -12,12 +12,21 @@ yum install gcc
 http://www.cnblogs.com/silent2012/p/3499654.html
 
 安装mysql5.6
+https://www.cnblogs.com/bookwed/p/5896619.html（首选）
 http://blog.csdn.net/jom_ch/article/details/21173121
 http://www.cnblogs.com/Anker/p/3551610.html
 
 mysql 5.6.31
 http://dev.mysql.com/get/Downloads/MySQL-5.6/mysql-5.6.31-linux-glibc2.5-x86_64.tar.gz
 https://www.cnblogs.com/wangdaijun/p/6132632.html
+
+mysql5.7
+http://blog.itpub.net/29362142/viewspace-2136528/
+https://cdn.mysql.com//Downloads/MySQL-5.7/mysql-5.7.19-linux-glibc2.12-x86_64.tar.gz
+
+开启多个mysql实例
+https://blog.csdn.net/keketrtr/article/details/80535961
+
 
 tomcat7
 https://drive.google.com/file/d/0B5ocRtapZZ1NbUQwMTBqajNETlk/view?usp=sharing
@@ -28,3 +37,10 @@ https://www.cnblogs.com/luxh/p/4680316.html
 
 hadoop
 http://hadoop.apache.org/docs/r1.0.4/cn/hdfs_user_guide.html
+
+MQ
+http://blog.csdn.net/baidu_35536997/article/details/77849372
+
+xshell 外网ip
+http://www.jb51.net/article/72861.htm
+
