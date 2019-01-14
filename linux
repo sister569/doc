@@ -8,3 +8,29 @@ ntpdate  0.cn.pool.ntp.org
 ZONE="Asia/Shanghai"
 cat /etc/sysconfig/clock
 cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+
+rpm -q openssh-clients
+
+yum -y install openssh-clients
+
+tar zxvf /bbs.tar.zip -C /zzz/bbs 
+
+netstat -lnpt  你可以用这个命令检测，端口是否打开
+
+service iptables stop关掉防火墙
+
+同步服务器时间
+ntpdate  0.cn.pool.ntp.org
+ZONE="Asia/Shanghai"
+cat /etc/sysconfig/clock
+cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+同步时区：
+ntpdate us.pool.ntp.org && hwclock -w
+timedatectl set-timezone Asia/Shanghai #设置系统时区为上海 && timedatectl set-local-rtc 1 #设置硬件时间，liunx有分系统时间和硬件时间   && timedatectl set-ntp yes #启用时间同步
+ntpdate  0.cn.pool.ntp.org
+
+
+SCP命令相关
+scp -r tomcat-web-new.tar.gz root@139.162.42.26:/home
+scp -P33033 zp.tar root@111.222.123.01:/da1/web/zhaopin.shouhuobao.com
+
