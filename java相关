@@ -1,0 +1,13 @@
+
+JAVA_OPTS="-Xms256m -Xmx512m -Xss1024K -XX:PermSize=128m -XX:MaxPermSize=512m"
+JAVA_OPTS="-Xms512m -Xmx1024m -Xss1024K -XX:PermSize=128m -XX:MaxPermSize=512m"
+javaweb 获取文件路径
+监听器中
+String path = event.getServletContext().getRealPath("WEB-INF/email-server.xml");
+普通类中
+String keyPath = HttpsUtil.class.getResource("/").getPath()+"key/ptplay.p12";
+
+tomcat 开启远程调试
+CATALINA_OPTS="-server -Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5888"
+
+<Context docBase="/home/www/ecrm-v" path="/ecrm-v"  reloadable="true" ></Context>
