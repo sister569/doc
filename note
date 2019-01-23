@@ -16,6 +16,8 @@ redis-server --service-start redis.windows-service6380.conf --service-name redis
 https://gitee.com/sipengcode/quick-pay/
 https://github.com/Exrick/xpay
 
+https://github.com/zhangyd-c
+
 安装svn
 http://blog.csdn.net/bluestarf/article/details/19653839
 
