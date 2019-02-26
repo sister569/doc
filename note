@@ -41,6 +41,7 @@ mysqld --initialize-insecure --user=mysql
 mysqld --install
 
 重启
+https://www.cnblogs.com/jxrichar/p/9248480.html  -----------------------最新
 net mysql start
 mysqladmin -u root -p flush-hosts
 
