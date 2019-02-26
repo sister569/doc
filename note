@@ -133,6 +133,14 @@ ntpdate  0.cn.pool.ntp.org
 ZONE="Asia/Shanghai"
 cat /etc/sysconfig/clock
 
+yum install ntp
+vi /etc/ntp.conf
+server 1.cn.pool.ntp.org
+server 3.asia.pool.ntp.org
+server 2.asia.pool.ntp.org
+
+ntpdate time.nist.gov  
+
 cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
 同步时区：
